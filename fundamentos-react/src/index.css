@@ -1,0 +1,10 @@
+body {
+    background-color: #222;
+    color: #fff;
+}
+
+.paragrafo {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
