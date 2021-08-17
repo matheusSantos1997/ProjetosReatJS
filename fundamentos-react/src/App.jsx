@@ -2,19 +2,42 @@ import './App.css';
 import React from 'react';
 import Card from './components/layout/Card';
 
+import Input from './components/formulario/Input';
+import IndiretaPai from './components/comunicacao/IndiretaPai';
+import DiretaPai from './components/comunicacao/DiretaPai';
+import UsuarioInfo from './components/condicional/UsuarioInfo';
+import ParOuImpar from './components/condicional/ParOuImpar';
+import ListaAlunos from './components/repeticao/ListaAlunos';
+import TabelaProdutos from './components/repeticao/TabelaProdutos';
 import Familia from './components/basicos/Familia';
 import FamiliaMembro from './components/basicos/FamiliaMembro';
 import Aleatorio from './components/basicos/Aleatorio';
 import Primeiro from './components/basicos/Primeiro';
 import ComParametro from './components/basicos/ComParametro';
 import Fragmento from './components/basicos/Fragmento';
-import ListaAlunos from './components/repeticao/ListaAlunos';
   
-const App = (props) => {
+const App = () => {
     return (
         <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
+                <Card titulo="#11 - Componente Controlado" color="#E45F56">
+                  <Input></Input>  
+                </Card>
+                <Card titulo="#10 - Comunicaçao Indireta" color="#8BAD39">
+                   <IndiretaPai></IndiretaPai>
+                </Card>
+                <Card titulo="#09 - Comunicaçao Direta" color="#59323C">
+                    <DiretaPai></DiretaPai>
+                </Card>
+                <Card titulo="#08 Renderização Condicional" color="#982395">
+                    <ParOuImpar numero={20}></ParOuImpar>
+                    <UsuarioInfo usuario={{nome: 'Matheus'}}></UsuarioInfo>
+                    <UsuarioInfo usuario={{email: 'matheus.uspeu@gmail.com'}}></UsuarioInfo>
+                </Card>
+                <Card titulo="#07 Tabela de produtos" color="#03396c">
+                   <TabelaProdutos></TabelaProdutos>
+                </Card>
                 <Card titulo="#06 Repeticao" color="#f37735">
                    <ListaAlunos></ListaAlunos>
                 </Card>
