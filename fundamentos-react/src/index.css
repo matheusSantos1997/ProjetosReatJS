@@ -1,10 +1,21 @@
 body {
+    font-family: Oswald;
     background-color: #222;
     color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
 }
 
 .paragrafo {
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
+}
+
+h1, h2, h3 {
+    font-weight: 200;
+}
+
+h2, h3 {
+    margin: 0;
 }

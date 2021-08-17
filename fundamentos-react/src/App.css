@@ -1,0 +1,5 @@
+.App .Cards {
+    display: flex;
+    justify-content: center; /* centraliza os cards */
+    flex-wrap: wrap; /* quebra a linha e joga o conteudo embaixo quando muda o tamanho da tela */
+}
