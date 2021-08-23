@@ -2,9 +2,11 @@ import './Menu.css';
 
 const Menu = (props) => {
      return(
-         <div className="Menu">
-            Component Menu
-         </div>
+         <aside className="Menu">
+            <nav>
+                
+            </nav>
+         </aside>
      );
 }
 
